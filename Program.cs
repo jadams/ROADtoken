@@ -44,8 +44,8 @@ namespace ROADToken
                     Console.WriteLine($"Using nonce {nonce} supplied on command line");
                     stuff = "{" +
                     "\"method\":\"GetCookies\"," +
-                    $"\"uri\":\"https://login.microsoftonline.com/common/oauth2/authorize?sso_nonce={nonce}\"," +
-                    "\"sender\":\"https://login.microsoftonline.com\"" +
+                    $"\"uri\":\"https://login.microsoftonline.us/common/oauth2/authorize?sso_nonce={nonce}\"," +
+                    "\"sender\":\"https://login.microsoftonline.us\"" +
                     "}";
                 }
                 else
@@ -53,8 +53,8 @@ namespace ROADToken
                     Console.WriteLine("No nonce supplied, refresh cookie will likely not work!");
                     stuff = "{" +
                         "\"method\":\"GetCookies\"," +
-                        $"\"uri\":\"https://login.microsoftonline.com/common/oauth2/authorize\"," +
-                        "\"sender\":\"https://login.microsoftonline.com\"" +
+                        $"\"uri\":\"https://login.microsoftonline.us/common/oauth2/authorize\"," +
+                        "\"sender\":\"https://login.microsoftonline.us\"" +
                     "}";
                 }
                 
